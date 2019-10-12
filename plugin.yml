@@ -1,0 +1,66 @@
+name: HPEGM
+main: Liveset1\HPEGM\Main
+version: 0.1
+api: 3.9.5
+load: POSTWORLD
+author: Liveset1
+description: Gamemode for HumanityPE!
+
+  commands:
+   gmc:
+    description: Switch Your Gamemode to Creative!
+    usage: /gmc [player]
+    permission: gmc.command
+   
+   gms:
+    description: "Switch Your Gamemode to Survival!"
+    usage: "/gms [player]"
+    permission: gms.command
+   
+   gma:
+    description: "Switch Your Gamemode to Adventure!
+    usage: "/gma [player]"
+    permission: gma.command
+   
+   gmspc:
+    description: "Switch Your Gamemode to Spectator"
+    usage: "/gmspc [player]"
+    permission: gmspc.command
+   
+  permissions:
+   gmc.other:
+     default: op
+     description: "giving GMC to others"
+     children:
+      gmc.command:
+       default: op
+       description: "gmc access"
+      
+   gms.other:
+     default: op
+     description: "giving GMS to others"
+     children:
+      gms.command:
+       default: op
+       description: "gms access"
+    gma.other:
+      default: op
+      description: "giving GMA to others"
+      children:
+       gma.command:
+        default: op
+        description: "gma access"
+        
+    gmspc.other:
+   default: op
+   description: "giving gmspc to others"
+   children:
+    gmspc.command:
+     default: op
+     description: "gmspc access"
+        
+    
+    
+    
+   
+   
