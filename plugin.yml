@@ -1,12 +1,12 @@
 name: HPEGM
-main: Liveset1\HPEGM\Main
+main: HPEGM\Main
 version: 0.1
 api: 3.0.0
 load: POSTWORLD
 author: Liveset1
 description: Gamemode for HumanityPE!
 
-  commands:
+ commands:
    gmc:
     description: "Switch Your Gamemode to Creative!"
     usage: "/gmc [player]"
