@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace HPEGM;
+namespace Liveset1\HPEGM;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\command\CommandSender;
