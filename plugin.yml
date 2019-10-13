@@ -8,8 +8,8 @@ description: Gamemode for HumanityPE!
 
   commands:
    gmc:
-    description: Switch Your Gamemode to Creative!
-    usage: /gmc [player]
+    description: "Switch Your Gamemode to Creative!"
+    usage: "/gmc [player]"
     permission: gmc.command
    
    gms:
