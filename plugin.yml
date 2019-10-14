@@ -17,7 +17,7 @@ commands:
     permission: gms.command
    
    gma:
-    description: "Switch Your Gamemode to Adventure!
+    description: "Switch Your Gamemode to Adventure!"
     usage: "/gma [player]"
     permission: gma.command
    
