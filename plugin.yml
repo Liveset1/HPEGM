@@ -2,7 +2,6 @@ name: HPEGM
 main: Liveset1\HPEGM\Gm
 version: 1.0.0
 api: 3.9.5
-load: POSTWORLD
 author: Liveset1
 description: Gamemode for HumanityPE!
 
