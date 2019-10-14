@@ -6,53 +6,42 @@ author: Liveset1
 description: Gamemode for HumanityPE!
 
 commands:
-   gmc:
-    description: "Switch Your Gamemode to Creative!"
-    usage: "/gmc [player]"
-    permission: gmc.command
-   
-   gms:
-    description: "Switch Your Gamemode to Survival!"
-    usage: "/gms [player]"
-    permission: gms.command
-   
-   gma:
-    description: "Switch Your Gamemode to Adventure!"
-    usage: "/gma [player]"
-    permission: gma.command
-   
-   gmspc:
-    description: "Switch Your Gamemode to Spectator"
-    usage: "/gmspc [player]"
-    permission: gmspc.command
-   
+ gms:
+  description: "Switch gamemode to Survival"
+  usage: "/gms [player]"
+  permission: gms.command
+
+ gmc:
+   description: "Switch gamemode to creative"
+   usage: "/gms [player]"
+   permission: gmc.command
+
+ gmspc:
+   description: "Switch gamemode to Spectator"
+   usage: "/gms [player]"
+   permission: gmspc.command
+
+
 permissions:
-   gmc.other:
-     default: op
-     description: "giving GMC to others"
-     children:
-      gmc.command:
-       default: op
-       description: "gmc access"
-      
-   gms.other:
-     default: op
-     description: "giving GMS to others"
-     children:
-      gms.command:
-       default: op
-       description: "gms access"
-    gma.other:
-      default: op
-      description: "giving GMA to others"
-      children:
-       gma.command:
-        default: op
-        description: "gma access"
-        
-    gmspc.other:
+ gms.other:
    default: op
-   description: "giving gmspc to others"
+   description: "allows giving gms to others"
+   children:
+    gms.command:
+     default: op
+     description: "gms access"
+
+ gmc.other:
+   default: op
+   description: "allows giving gmc to others"
+   children:
+    gmc.command:
+     default: op
+     description: "gmc access"
+
+ gmspc.other:
+   default: op
+   description: "allows giving gmspc to others"
    children:
     gmspc.command:
      default: op
