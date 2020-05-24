@@ -54,7 +54,27 @@ class Gm extends PluginBase{
                         }else{
                             $sender->sendMessage($notother);
                             return true;
-                        }
+                        }                                           
+                    }
+                }else{$sender->sendMessage($nocmd);
+                }
+                break;
+                            case "gma":
+                if($sender->hasPermission("gma.command")){
+                    if(count($args) < 1) {
+                        $sender->sendMessage("Gamemode changed to  Gamemode 2");
+                        $player->setGamemode(1);
+                    }
+                    if(isset($args[0])){
+                        $subject = $serv->getPlayer($args[0]);
+                        if($sender->hasPermission("gmc.other")){
+                            $subject->setGamemode(2);
+                            $sender->sendMessage("Changed ". $subject->getName()."'s gamemode to  Gamemode 2");
+                            $subject->sendMessage("Your gamemode was changed to Gamemode 2");
+                        }else{
+                            $sender->sendMessage($notother);
+                            return true;
+                        }                                           
                     }
                 }else{$sender->sendMessage($nocmd);
                 }
